@@ -1,4 +1,4 @@
-{{ template "theme/partials/header.html" . }}
+{{ partial "header.html" . }}
 <strong>{{ .Title }}</strong>
 <hr/>
 {{ .Content }}
@@ -6,4 +6,4 @@
 {{with .Prev}}<a href="{{.Permalink}}">← {{.Title}}</a>{{end}}
 {{with .Next}}<a href="{{.Permalink}}">{{.Title}} →</a>{{end}}
 </div>
-{{ template "theme/partials/footer.html" . }}
+{{ partial "footer.html" . }}
